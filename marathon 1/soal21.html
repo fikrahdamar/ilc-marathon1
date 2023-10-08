@@ -4,56 +4,159 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styleaside.css">
+    <link rel="stylesheet" href="stylemain.css">
     <title>ILC Marathon 1 Tugas 21</title>
   </head>
+
   <body>
-    <section>
-    <div class="div1">
-      <h1 class="header">
-        <span class="h1">Halaman Register</span>
-      </h1>
+<!-- title -->
+    <header>
+      <h1 class="header-p">ILC</h1>
+      <br>
+      <p class="p-header">INFORMATICS LEARNING COMMUNITY</p>
+      <P class="p-header">UPN VETERAN JAWA TIMUR</P>
+    </header>
+
+<!-- nav -->
+  <nav>
+    <ul class="nav-ul">
+        <li class="nav-li"> <a href="#profil">Profil </a></li>
+        <li class="nav-li"> <a href="#kegiatan">Kegiatan </a></li>
+        <li class="nav-li"> <a href="#form">Registrasi </a></li>
+    </ul>
+  </nav>
+
+<!-- profil -->
+<div class="all-after-nav">
+  <div class="profile-aside">
+<section class="profile" id="profile">
+  <div class="profile-page">
+    <p class="profile-title">Profil</p>
+    <figure class="profile-figure">
+      <img src="ilcIG.png" alt="ilc-instagram" class="profile-photo">
+      <figcaption class="profile-capt">Komunitas ILC &#40;Informatics Learning Community&#41; yang didirikan di Fakultas Ilmu Komputer UPN Veteran Jawa Timur. bertujuan sebagai tempat
+        untuk belajar bersama para mahasiswa Fasilkom pada pengembangan Web Developer. Kami menyediakan berbagai program belajar. Mulai dari program Bootcamp
+        hingga webinar yang informatif.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- aside -->
+<aside class="aside">
+
+  <!-- logo ILC -->
+
+  <div class="ilc-logo-information">
+    <h3 class="ilc-logo-information-header">Logo ILC</h3>
+    <br>
+    <p>Informatics Learning Community</p>
+    <figure class="ilc-logo-aside">
+      <img src="Logo-ILC.png" alt="logo-ilc" class="ilc-logo-aside">
+    </figure>
+    <h4 class="ilc-logo-information-header"> Informasi</h4>
+    <br>
+    <ul class="ul-aside">
+      <li class="li-aside"><strong>Universitas</strong> &emsp;&emsp;UPN Veteran Jawa Timur </li>
+      <li class="li-aside"><strong>Tahun Berdiri</strong>&emsp; 019</li>
+      <li class="li-aside"><strong>Total Anggota</strong>&emsp;100</li>
+      <li class="li-aside"><strong>Ketua</strong>&emsp;&emsp;&emsp;&emsp;&nbsp; Ahmad Hikman Chani</li>
+      <li class="li-aside"><strong>Email</strong>&emsp;&emsp;&emsp;&emsp;&nbsp;ilcupnvjatim@gmail.com</li>
+    </ul>
+  </div>
+</div>
+</aside>
+
+<!-- Kegiatan -->
+<section class="kegiatan" id="kegiatan">
+  <div class="kegiatan-page">
+    <p class="kegiatan-title">Kegiatan</p>
+    <figure class="kegiatan-figure">
+      <img src="event.jpg" alt="event-ilc" class="kegiatan-photo">
+      <figcaption class="kegiatan-capt">Kegiatan ILC &#40;Informatics Learning Community&#41; memiliki beragam kegiatan, mulai dari bootcamp web
+        development, webinar linux yang terbuka untuk umum ataupun anggota ILC itu sendiri, hingga tanya jawab &#40;QnA&#41; tentang seputar Web development
+        dan masih banyak event event ataupun kegiatan yang dapat mengembangkan para mahasiswa di fakultas ilmu komputer UPN Veteran Jawa Timur </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- form -->
+    <section class="form" id="form">
+    <form class="signup-form" action="/register" method="post">
+
+    <!-- form header -->
+    <div class="form-all">
+    <div class="form-header">
+    <h1 class="form-regist">Form Registrasi</h1>
     </div>
-    </section>
-    <form action="register" class="register">
-        <section id="section1">
-      <label for="email">Email :</label>
-      <input
-        type="email"
-        placeholder="address@gmail.com"
-        required
-        id="email"
-        name="email"
-      />
-      <br />
-      <br />
-      <label for="password">Password :</label>
-      <input
-        type="password"
-        placeholder="password"
-        id="password"
-        required
-        name="password"
-      />
-      <br />
-      <br />
-      <label for="photos">Foto Profil :</label>
-      <input type="file" id="photos" name="photos" />
-      <br /><br />
-      <label for="date">Tanggal Lahir :</label>
-      <input type="date" name="date" id="date" />
-      <br /><br />
-      <label for="gender">Gender :</label>
-      <select name="gender" id="gender">
-        <option value="gender1">Male</option>
-        <option value="gender2">Female</option>
-      </select>
-      <br /><br />
-      <input type="submit" value="submit" class="submit" />
-    </section>
-    <section class="section2">
-      <img src="ilclogo.jpg" alt="logo ilc" />
-    </section>
-      <br />
+
+    <!-- form body -->
+    <div class="form-body">
+
+      <!-- email -->
+      <div class="email-first">
+        <label for="email" class="email-title">Email </label>
+        <br>
+        <input type="text" id="email" class="email-input" placeholder="address@gmail.com" required>
+      </div>
+
+      <!-- password -->
+      <div class="password-first">
+        <label for="password" class="password-title">Password </label>
+        <br>
+        <input type="password" id="password" class="password-input" placeholder="password" required>
+      </div>
+
+      <!-- foto profil -->
+      <div class="photo-first">
+        <label for="photo" class="photo-title">Foto </label>
+        <br>
+        <input type="file" id="photo" class="photo-input" required>
+      </div>
+
+      <!-- tanggal lahir -->
+      <div class="date-first">
+        <label for="date" class="date-title">Tanggal Lahir</label>
+        <br>
+        <input type="date" id="date" class="date-input" required>
+      </div>
+
+      <!-- gender -->
+      <div class="gender-first">
+        <label for="gender" class="gender-title">Gender</label>
+        <br>
+        <select name="gender" id="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+        <br> <br>
+      </div>
+
+      <!-- submit -->
+      <div class="submit-first">
+      <input type="submit" value="submit" class="submit">
+      </div>
+      <div class="ilc-first">
+      <img src="Logo-ILC.png" alt="logo-ilc" class="ilc-logo">
+      </div>
+    </div>
+  </div>
     </form>
-  </body>
+    </section>
+</div>
+
+<!-- footer -->
+<section class="footer">
+<footer>
+  <div class="footer">
+    <p class="footer-p">Semantic With HTML &#169; Marathon 3, Informatics Learning Community</p>
+  </div>
+</footer>
+</section>
+
+</body>
+  
+
+
+
 </html>
