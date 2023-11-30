@@ -13,7 +13,7 @@ html {
 .profile-aside {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
 }
 
@@ -64,17 +64,19 @@ li a:hover {
 
 /* profile */
 .profile-photo {
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 50px;
+    width: 100%;
+    padding-right: 50px;
 }
 
 .profile-page {
     margin-left: 25px;
     margin-top: 20px;
     background-color: rgb(255, 243, 243);
-    width: 1250px;
-    min-height:530px;
-    max-height: auto;
+    max-width: 1250px;
+    min-height:auto;
+    max-height: 800px;
     border-radius: 50px;
     box-shadow: 10px 10px 50px rgba(83, 83, 83, 0.397);
     margin-top: 40px;
@@ -92,6 +94,7 @@ li a:hover {
     font-family: 'Open Sans', sans-serif;
     font-family: 'PT Sans', sans-serif;
     padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 .profile-figure {
@@ -126,8 +129,9 @@ li a:hover {
 .kegiatan-photo {
      object-fit: cover;
      border-radius: 50px;
-     height: 500px;
-     width: 1000px;
+     height: 600px;
+     width: 100%;
+     padding-right: 50px;
      max-height: auto;
 }
 
@@ -141,6 +145,7 @@ li a:hover {
     font-family: 'PT Sans', sans-serif;
     padding-left:12px; 
     padding-right: 50px;
+    padding-bottom: 20px;
 }
 
 /* ------------------------------------------------------------------ */
@@ -152,13 +157,12 @@ li a:hover {
 /* footer */
 .footer {
     background-color: rgb(45, 121, 219);
-   bottom: -1px;
    clear: both;
     position: relative;
     height: 50px;
-    margin-top: 500px;
     font-weight: bold;
     color: whitesmoke;
+    margin-top: 200px;
 }
 .footer-p {
     text-align: center;
@@ -167,3 +171,26 @@ li a:hover {
 }
 
 /* ------------------------------------------------------------------ */
+
+/* media queries  */
+
+@media screen and (min-width:768px) { 
+
+}
+
+@media screen and (max-width:768px){
+    .profile-aside {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .ilc-logo-information {
+        display: flex;
+        width:710px;
+        order:2;
+    }
+    .aside {
+        order: -1;
+    }
+}
